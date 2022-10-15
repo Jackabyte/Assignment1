@@ -1,3 +1,5 @@
+package org.school;
+
 public class lecturer {
     private String Name;
     private int Age;

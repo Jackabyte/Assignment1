@@ -3,13 +3,13 @@ plugins {
     id 'maven-publish'
 }
 
-group 'org.example'
-version '1.0-SNAPSHOT'
+group 'org.school'
+version '1.5-SNAPSHOT'
 
 repositories {
     mavenCentral()
 
-    //maven { url 'https://jitpack.io' }
+   // maven { url 'https://jitpack.io' }
 }
 
 dependencies {

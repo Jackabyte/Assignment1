@@ -1,3 +1,6 @@
+package org.school;
+
+
 public class module {
     private String name;
     private String id;

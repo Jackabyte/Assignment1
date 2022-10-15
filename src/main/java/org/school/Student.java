@@ -1,4 +1,4 @@
-
+package org.school;
 
 public class Student {
     private String Name;

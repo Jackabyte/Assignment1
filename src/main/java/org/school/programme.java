@@ -1,4 +1,7 @@
+package org.school;
+
 import org.joda.time.DateTime;
+import org.school.module;
 
 public class programme {
     private String name;
