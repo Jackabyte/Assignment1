@@ -3,7 +3,7 @@
 public class Student {
     private String Name;
     private int Age;
-    private String DOB; //Placeholder will change later
+   // private String DOB; //Placeholder will change later
     private String username;
     private String[] courses;
     private String[] modules;
@@ -11,7 +11,7 @@ public class Student {
     public Student(String name, int age, String DOB, String username, String[] courses, String[] modules) {
         Name = name;
         Age = age;
-        this.DOB = DOB;
+        //this.DOB = DOB;
         this.username = username;
         this.courses = courses;
         this.modules = modules;
@@ -33,13 +33,7 @@ public class Student {
         Age = age;
     }
 
-    public String getDOB() {
-        return DOB;
-    }
 
-    public void setDOB(String DOB) {
-        this.DOB = DOB;
-    }
 
     public String getUsername() {
         return Name + Age;
