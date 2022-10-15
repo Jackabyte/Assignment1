@@ -6,6 +6,18 @@ plugins {
 group 'org.school'
 version '1.5-SNAPSHOT'
 
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId = 'com.github.Jackabyte'
+            artifactId = 'Assignment1'
+            version = '1.0.0-SNAPSHOT'
+
+            from components.java
+        }
+    }
+}
+
 repositories {
     mavenCentral()
 
@@ -23,6 +35,9 @@ dependencies {
 
 
 }
+
+
+
 
 test {
     useJUnitPlatform()
