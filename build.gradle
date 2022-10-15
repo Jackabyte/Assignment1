@@ -6,6 +6,7 @@ plugins {
 group 'org.school'
 version '1.5-SNAPSHOT'
 
+//gradlelelele
 publishing {
     publications {
         maven(MavenPublication) {
