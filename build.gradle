@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'maven-publish'
 }
 
 group 'org.example'
@@ -7,6 +8,8 @@ version '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
+
+    maven { url 'https://jitpack.io' }
 }
 
 dependencies {
@@ -16,6 +19,7 @@ dependencies {
     // https://mvnrepository.com/artifact/org.terasoluna.gfw/terasoluna-gfw-jodatime
     implementation group: 'org.terasoluna.gfw', name: 'terasoluna-gfw-jodatime', version: '5.7.1.SP1.RELEASE'
 
+    implementation 'com.github.Jackabyte:Assignment1:Test'
 }
 
 test {
