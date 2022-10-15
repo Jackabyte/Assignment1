@@ -12,16 +12,21 @@ public class usernameTest {
 
     @BeforeEach
     void setUp() {
-        student = new Student("Jack", 12, "", "", new String[]{"ECE", "DBC"}, new String[]{"Gamig", "Pain"});
-        lect = new lecturer("Johnathan", 34, "", "", new String[]{"ECE", "DBZ"}, new String[]{"Gaming", "Pain"});
+        student = new Student("Jack", 12, 23144, "12/12/2010", "", new String[]{"ECE", "DBC"}, new String[]{"Gamig", "Pain"});
+        lect = new lecturer("Johnathan", 34, 12345, "09/03/2000", "", new String[]{"ECE", "DBZ"}, new String[]{"Gaming", "Pain"});
     }
 
     @Test
-    @DisplayName("Check to see if the username is gotten correctly")
-    void testUsername(){
-        assertTrue("Jack12" == student.getUsername());
-
+    @DisplayName("Check to see if the student username is gotten correctly")
+    void testStudentUsername(){
+        assertTrue("Jack12".equals(student.getUsername()));
     }
+    @Test
+    @DisplayName("Check to see if the lecturer username is gotten correctly")
+    void testLecturerUsername(){
+        assertTrue("Johnathan34".equals(lect.getUsername()));
+    }
+
 
 
 

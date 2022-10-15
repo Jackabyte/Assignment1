@@ -1,15 +1,18 @@
 public class lecturer {
     private String Name;
     private int Age;
-   // private String DOB; //Placeholder will change later
+
+    private int ID;
+    private String DOB; //String?
     private String username;
     private String[] courses;
     private String[] modules;
 
-    public lecturer(String name, int age, String DOB, String username, String[] courses, String[] modules) {
+    public lecturer(String name, int age, int id, String DOB, String username, String[] courses, String[] modules) {
         Name = name;
         Age = age;
-        //this.DOB = DOB;
+        ID = id;
+        this.DOB = DOB;
         this.username = username;
         this.courses = courses;
         this.modules = modules;
@@ -31,7 +34,21 @@ public class lecturer {
         Age = age;
     }
 
+    public int getID() {
+        return ID;
+    }
 
+    public void setID(int ID) {
+        this.ID = ID;
+    }
+
+    public String getDOB() {
+        return DOB;
+    }
+
+    public void setDOB(String DOB) {
+        this.DOB = DOB;
+    }
 
     public String getUsername() {
         return Name + Age;

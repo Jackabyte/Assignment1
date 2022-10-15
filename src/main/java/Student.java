@@ -3,15 +3,19 @@
 public class Student {
     private String Name;
     private int Age;
-   // private String DOB; //Placeholder will change later
+
+    private int ID;
+
+    private String DOB; //Placeholder will change later
     private String username;
     private String[] courses;
     private String[] modules;
 
-    public Student(String name, int age, String DOB, String username, String[] courses, String[] modules) {
+    public Student(String name, int age, int id, String DOB, String username, String[] courses, String[] modules) {
         Name = name;
         Age = age;
-        //this.DOB = DOB;
+        ID = id;
+        this.DOB = DOB;
         this.username = username;
         this.courses = courses;
         this.modules = modules;
